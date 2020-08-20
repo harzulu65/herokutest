@@ -38,7 +38,7 @@ app.get("/api/characters", function (req, res) {
 app.get("/api/characters/:character", function (req, res) {
   var chosen = req.params.character;
 
-  console.log(chosen);
+  // console.log(chosen);
 
   // for (var i = 0; i < characters.length; i++) {
   //   if (chosen === characters[i].routeName) {
@@ -60,7 +60,7 @@ app.post("/api/characters", function (req, res) {
 
   newCharacter.routeName = newCharacter.name.replace(/\s+/g, "").toLowerCase();
 
-  console.log(newCharacter);
+  // console.log(newCharacter);
 
   characters.push(newCharacter);
 
